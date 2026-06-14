@@ -1,16 +1,16 @@
-plugins { 
-    id("com.android.application")
+buildscript {
+    repositories { 
+        google()
+        mavenCentral() 
+    }
+    dependencies { 
+        classpath("com.android.tools.build:gradle:8.2.0")
+    }
 }
 
-android {
-    namespace = "com.barakah.smartboard"
-    compileSdk = 36
-    
-    defaultConfig {
-        applicationId = "com.barakah.smartboard"
-        minSdk = 28
-        targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
     }
 }
